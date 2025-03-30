@@ -1,14 +1,14 @@
 #include "mbed.h"
 
-DigitalIn BotonArranque(p5);  
-DigitalIn BotonParo(p6);      
-DigitalIn Guarda(p7);         
-DigitalIn Temperatura(p8);   
+DigitalIn BotonArranque(D5);  
+DigitalIn BotonParo(D6);      
+DigitalIn Guarda(D7);         
+DigitalIn Temperatura(D8);   
 
-DigitalOut led1(p9);   //Motor listo para arrancar
-DigitalOut led2(p10);  //Motor está trabajando
-DigitalOut led3(p11);  //Falla de guarda de seguridad
-DigitalOut led4(p12);  //Exceso de temperatura
+DigitalOut led1(D9);   //Motor listo para arrancar
+DigitalOut led2(D10);  //Motor está trabajando
+DigitalOut led3(D11);  //Falla de guarda de seguridad
+DigitalOut led4(D12);  //Exceso de temperatura
 
 //Estados del motor
 bool MotorCorriendo = false;  
